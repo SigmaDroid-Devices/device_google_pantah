@@ -29,6 +29,9 @@ include device/google/gs-common/wireless_charger/wireless_charger.mk
 # Face Unlock
 include vendor/google/faceunlock/device.mk
 
+# PixelParts
+include packages/apps/PixelParts/device.mk
+
 # Build necessary packages for vendor
 
 SIGMA_BUILD_TYPE := OFFICIAL
