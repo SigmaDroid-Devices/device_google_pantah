@@ -4,6 +4,8 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+DISABLE_ARTIFACT_PATH_REQUIREMENTS := true
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-lineage
 
@@ -25,6 +27,16 @@ include hardware/google/pixel/powershare/device.mk
 include device/google/gs-common/wireless_charger/wireless_charger.mk
 
 # Build necessary packages for vendor
+
+SIGMA_BUILD_TYPE := OFFICIAL
+SIGMA_MAINTAINER := LurdRaiden
+TARGET_INCLUDE_MATLOG := true
+TARGET_EXCLUDES_AUDIOFX := false
+TARGET_DEFAULT_ADB_ENABLED = true
+TARGET_HAS_UDFPS := true
+TARGET_ENABLE_BLUR := true
+
+WITH_GMS := true
 
 # Audio
 PRODUCT_PACKAGES += \
