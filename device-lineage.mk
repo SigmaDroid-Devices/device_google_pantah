@@ -30,6 +30,9 @@ include device/google/gs-common/wireless_charger/wireless_charger.mk
 # Face Unlock
 include vendor/google/faceunlock/device.mk
 
+# PixelParts
+include packages/apps/PixelParts/device.mk
+
 # Gapps
 WITH_GMS := true
 WITH_GAPPS := true
